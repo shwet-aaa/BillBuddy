@@ -17,6 +17,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 16px;
+  /* background-color: #0099cc; */
 }
   
 .btn-lg {
@@ -73,6 +74,7 @@
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
+    /* background-color: #0099cc; */
 }
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;

@@ -1,0 +1,9 @@
+body{
+    background-image: linear-gradient(to right, green, olive);
+    
+}
+.col-sm-offset-2 col-sm-10{
+    display: flex;
+justify-content: center;
+align-items: center;
+}

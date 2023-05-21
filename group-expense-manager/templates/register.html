@@ -5,13 +5,14 @@
 <html lang="en">
 
   <head>
-      <title>Sign up!</title>
+      <title>CREATE YOUR ACCOUNT</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/navbar.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/register.css') }}">
   </head>
 
   <body>
@@ -24,7 +25,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Group Expense Manager</a>
+            <a class="navbar-brand" href="#">BillBuddy</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
@@ -52,8 +53,10 @@
     </div>
     {%endif%}
     <div class="container">
-      <h3>SIGN UP</h3>
-        <p>Already have an account? Login <a href="{{ url_for('login') }}">here</a>
+      <h3 align="center">CREATE YOUR ACCOUNT</h3>
+      
+        <p align="center">Already have an account? Login <a href="{{ url_for('login') }}">here</a> <br>
+          
         <form class="form-horizontal" action="{{ url_for('register') }}" method="post">
           <div class="form-group">
               <label class="control-label col-sm-2" for="username">Username:</label>
@@ -102,7 +105,7 @@
         </div>
         <div class="form-group">        
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button style="background-color: bisque;"type="submit" class="btn btn-default"  >Submit</button>
           </div>
         </div>
       </form>
